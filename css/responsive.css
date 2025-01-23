@@ -1,0 +1,67 @@
+@media screen and (max-width: 768px) {
+    .sla1 {
+        top: 12%;
+        right: 8px
+    }
+
+    .sla1 .sla2::before {
+        height: 70px;
+    }
+
+    .sla1 .sla2 a {
+        font-size: 9px
+    }
+
+    .sla3 {
+        bottom: 4%;
+        left: 8px;
+    }
+
+    .sla3 .sla2::after {
+        height: 70px;
+    }
+
+    .sla3 .sla2 li:last-of-type {
+        margin-bottom: 16px;
+    }
+
+    .sla3 .sla2 a {
+        padding: 14px;
+        font-size: 20px;
+    }
+
+
+		header {
+			padding: 0 18px;
+			height: 60px;
+		}
+
+    header nav .logo {
+        font-size: 1.2em;
+    }
+
+    header nav a {
+        font-size: .6rem;
+        padding: 0.4rem .4rem;
+    }
+
+    .content {
+        padding: 0 40px;
+    }
+
+    .content h2 {
+        font-size: .9em;
+    }
+
+    .content h1 {
+        font-size: 1.9em;
+    }
+
+    .social-icons a {
+        font-size: 1.2em;
+    }
+
+    .image {
+        margin-top: 70px;
+    }
+}
