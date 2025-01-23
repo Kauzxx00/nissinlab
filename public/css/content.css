@@ -27,6 +27,14 @@ main {
 	justify-content: center;
 }
 
+.home {
+	display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+	gap: 40px;
+}
+
 .content h2 {
 	font-size: clamp(14px, 5vw, 16px);
 	font-weight: 400;
