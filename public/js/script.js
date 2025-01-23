@@ -6,10 +6,13 @@ const sections = Array.from(menuLinks).map(link => link.getAttribute("data-targe
 
 menuLinks.forEach((link, index) => {
     link.addEventListener("click", (e) => {
+        const isLogin = link.classList.contains("login");
+        if (isLogin) return; // Permite o comportamento normal do link de login
+
         e.preventDefault();
 
         const target = sections.indexOf(link.getAttribute("data-target"));
-        if (target === currentIndex) return;
+        if (target === -1 || target === currentIndex) return;
 
         menuLinks.forEach(link => link.classList.remove("active"));
         link.classList.add("active");
@@ -18,7 +21,6 @@ menuLinks.forEach((link, index) => {
         carousel.style.transform = `translateX(-${currentIndex * 100}vw)`;
     });
 });
-
 // ---- Menu Mobile ----
 const menuToggle = document.getElementById('menuToggle');
 const menu = document.getElementById('menu-mobile');

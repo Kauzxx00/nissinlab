@@ -116,9 +116,9 @@ header nav #menu-desktop a.active::after {
 	margin-right: 20px;
 }
 
-.menu-toggle svg {
-	width: 38px;
-	height: 38px;
+.menu-toggle .user {
+	width: 40px;
+	height: 45px;
 	padding: 3px;
 	fill: #e5c8cf;
 	background: #e4708d;
@@ -155,14 +155,14 @@ header nav #menu-desktop a.active::after {
 		justify-content: center;
 		position: fixed;
 		top: 20%;
-		right: 32.5px;
-		width: 50px;
-		height: 140px;
+		right: 36px;
+		width: 45px;
+		height: 200px;
 		background: #f2eeef;
 		border-radius: 120px;
 		box-shadow: -2px 3px 3px rgba(0, 0, 0, 0.2);
 		gap: 20px;
-		padding: 80px 0;
+		padding: 90px 0;
 		opacity: 0;
 		visibility: hidden;
 		transition: 0.3s ease-in-out, visibility 0.2s ease;
@@ -176,6 +176,26 @@ header nav #menu-desktop a.active::after {
 
 	#menu-mobile ul a {
 		font-size: 18px;
+	}
+	
+	/* #menu-mobile ul .login {
+		border-top: 2px solid #cfa6b2;
+	} */
+	
+	#menu-mobile ul .login {
+		margin-top: 10px;
+	}
+	#menu-mobile ul .login::before {
+		position: absolute;
+		content: "";
+    display: block;
+    width: 30px;
+    height: 2px;
+    left: 0;
+    right: 0;
+    bottom: 40px;
+    margin: 0px auto;
+    background-color: #cfa6b2;
 	}
 
 	#menu-mobile.active {

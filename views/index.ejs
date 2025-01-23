@@ -34,39 +34,7 @@
     </div>
 
     <!-- Menu -->
-    <header>
-        <nav>
-            <div class="logo">
-                <h1>
-                    <<span class="color">Nissin Lab</span><span class="color">/</span>>
-                </h1>
-            </div>
-
-            <div class="menu-toggle" id="menuToggle">
-                <svg xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 448 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
-                    <path
-                        d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512l388.6 0c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304l-91.4 0z" />
-                </svg>
-            </div>
-
-            <div class="links desktop" id="menu-desktop">
-                <ul>
-                    <li><a class="nav active" href="#about" data-target="about">Sobre</a></li>
-                    <li><a class="nav" href="#project" data-target="project">Projetos</a></li>
-                    <li><a class="nav" href="#contact" data-target="contact">Contato</a></li>
-                </ul>
-            </div>
-
-            <div class="links mobile" id="menu-mobile">
-                <ul>
-                    <li><a class="nav active" href="#about" data-target="about"><i class="fas fa-info-circle"></i></a></li>
-                    <li><a class="nav" href="#project" data-target="project"><i class="fas fa-folder"></i></a></li>
-                    <li><a class="nav" href="#contact" data-target="contact"><i class="fas fa-phone"></i></a></li>
-                </ul>
-            </div>
-        </nav>
-    </header>
+    <%- include('partials/header') %>
 
     <div class="sla3">
         <ul class="sla2">
@@ -137,7 +105,7 @@
         </div>
     </main>
 
-    <script src="./script.js"></script>
+    <script src="./js/script.js"></script>
 </body>
 
 </html>
