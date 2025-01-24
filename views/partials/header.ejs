@@ -15,7 +15,7 @@
 					</svg>
 				<% } else { %>
 					<% let avatar = `https://cdn.discordapp.com/avatars/${user.id}/${user.avatar}.png` %>
-						<img src="<%= avatar %>" alt="Foto de Perfil" class="user">
+					<img src="<%= avatar %>" alt="Foto de Perfil" class="user">
 				<% } %>
 			</div>
 
@@ -25,6 +25,14 @@
 					<li><a class="nav" href="#project" data-target="project">Projetos</a></li>
 					<li><a class="nav" href="#contact" data-target="contact">Contato</a></li>
 				</ul>
+				<div class="btn-user">
+					<% if (!user) { %>
+						<a href="/auth/discord" class="login">Login</a>
+					<% } else { %>
+						<% let avatar = `https://cdn.discordapp.com/avatars/${user.id}/${user.avatar}.png` %>
+						<img src="<%= avatar %>" alt="Foto de Perfil" class="user">
+					<% } %>
+				</div>
 			</div>
 
 			<div class="links mobile" id="menu-mobile">

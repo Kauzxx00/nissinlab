@@ -117,7 +117,7 @@ header nav #menu-desktop a.active::after {
 }
 
 .menu-toggle .user {
-	width: 40px;
+	width: 45px;
 	height: 45px;
 	padding: 3px;
 	fill: #e5c8cf;
@@ -127,17 +127,19 @@ header nav #menu-desktop a.active::after {
 	transition: transform 0.3s ease, background 0.3s ease;
 }
 
-/* Estilo do menu em telas maiores */
-@media screen and (min-width: 768px) {
-	.menu-toggle {
-		display: none;
-	}
-	#menu-desktop {
-		display: flex;
-	}
-	#menu-mobile {
-		display: none;
-	}
+.menu-toggle {
+	display: none;
+}
+
+#menu-desktop {
+	display: flex;
+	width: 30%;
+	gap: 40px;
+	justify-content: flex-end;
+}
+
+#menu-mobile {
+	display: none;
 }
 
 /* Exibir o botão de menu em telas menores */
@@ -149,6 +151,7 @@ header nav #menu-desktop a.active::after {
 	#menu-desktop {
 		display: none;
 	}
+
 	#menu-mobile {
 		display: flex;
 		flex-direction: column;
@@ -177,25 +180,26 @@ header nav #menu-desktop a.active::after {
 	#menu-mobile ul a {
 		font-size: 18px;
 	}
-	
+
 	/* #menu-mobile ul .login {
 		border-top: 2px solid #cfa6b2;
 	} */
-	
+
 	#menu-mobile ul .login {
 		margin-top: 10px;
 	}
+
 	#menu-mobile ul .login::before {
 		position: absolute;
 		content: "";
-    display: block;
-    width: 30px;
-    height: 2px;
-    left: 0;
-    right: 0;
-    bottom: 40px;
-    margin: 0px auto;
-    background-color: #cfa6b2;
+		display: block;
+		width: 30px;
+		height: 2px;
+		left: 0;
+		right: 0;
+		bottom: 40px;
+		margin: 0px auto;
+		background-color: #cfa6b2;
 	}
 
 	#menu-mobile.active {

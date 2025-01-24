@@ -7,7 +7,7 @@ const sections = Array.from(menuLinks).map(link => link.getAttribute("data-targe
 menuLinks.forEach((link, index) => {
     link.addEventListener("click", (e) => {
         const isLogin = link.classList.contains("login");
-        if (isLogin) return; // Permite o comportamento normal do link de login
+        if (isLogin) return;
 
         e.preventDefault();
 
