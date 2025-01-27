@@ -30,9 +30,11 @@ nav {
 	justify-content: space-between;
 }
 
-header nav .logo {
+header nav .logo h1 {
 	margin: 0;
-	font-size: 2em;
+	font-size: 1.8em;
+	user-select: none;
+	cursor: pointer;
 }
 
 header nav .links {
@@ -59,18 +61,29 @@ header nav .links ul li {
 }
 
 /* Navegação */
-header nav a {
+header nav ul a {
 	color: #969696;
 	text-decoration: none;
 	padding: 0.5rem 1rem;
-	font-size: 1.2rem;
+	font-size: 1rem;
 	display: inline-block;
-	transition: transform 0.3s ease, color 0.3s ease;
+	transition: all 0.3s ease;
+}
+
+header nav .btn-user .login {
+	padding: 12px 24px;
+	color: #ffffff;
+	background: #e07e8e;
+	border-radius: 10px;
+	text-decoration: none;
+	transition: all 0.3s ease;
+}
+header nav .btn-user .login:hover {
+	border-radius: 20px;
 }
 
 header nav a:hover {
 	color: #e46883;
-	/* Alterar a cor ao passar o mouse */
 	transform: scale(1.1);
 
 }
@@ -103,7 +116,6 @@ header nav #menu-desktop a.active::after {
 	}
 }
 
-/* Botão de menu estilo hambúrguer */
 .menu-toggle {
 	display: none;
 	flex-direction: column;
@@ -117,8 +129,8 @@ header nav #menu-desktop a.active::after {
 }
 
 .menu-toggle .user {
-	width: 45px;
-	height: 45px;
+	width: 40px;
+	height: 50px;
 	padding: 3px;
 	fill: #e5c8cf;
 	background: #e4708d;
@@ -168,7 +180,7 @@ header nav #menu-desktop a.active::after {
 		padding: 90px 0;
 		opacity: 0;
 		visibility: hidden;
-		transition: 0.3s ease-in-out, visibility 0.2s ease;
+		transition: 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55), visibility 0.5s linear;
 	}
 
 	#menu-mobile ul {

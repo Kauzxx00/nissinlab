@@ -6,6 +6,7 @@
 				</h1>
 			</div>
 
+			<!-- Menu Desktop -->
 			<div class="menu-toggle" id="menuToggle">
 				<% if (!user) { %>
 					<svg class="user" xmlns="http://www.w3.org/2000/svg"
@@ -27,7 +28,7 @@
 				</ul>
 				<div class="btn-user">
 					<% if (!user) { %>
-						<a href="/auth/discord" class="login">Login</a>
+						<a href="/auth/discord" class="login corner-button">Login</a>
 					<% } else { %>
 						<% let avatar = `https://cdn.discordapp.com/avatars/${user.id}/${user.avatar}.png` %>
 						<img src="<%= avatar %>" alt="Foto de Perfil" class="user">
@@ -35,13 +36,13 @@
 				</div>
 			</div>
 
+			<!-- Menu Mobile -->
 			<div class="links mobile" id="menu-mobile">
 				<ul>
 					<li><a class="nav active" href="#about" data-target="about"><i class="fas fa-info-circle"></i></a></li>
 					<li><a class="nav" href="#project" data-target="project"><i class="fas fa-folder"></i></a></li>
 					<li><a class="nav" href="#contact" data-target="contact"><i class="fas fa-phone"></i></a></li>
 					
-					<!-- Login -->
 					<% if(!user) { %>
 						<li><a class="nav login" href="/auth/discord"><i class="fas fa-sign-in-alt"></i></a></li>
 					<% } else { %>
