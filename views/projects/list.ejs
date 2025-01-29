@@ -1,140 +1,157 @@
 <style>
-    .projects {
-	width: 100%;
-	display: flex;
-	flex-direction: column;
-	padding: 20px;
-	box-sizing: border-box;
-	background: #f9f5f6;
-	border-radius: 10px;
-	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-}
+	.projects {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		padding: 20px;
+		box-sizing: border-box;
+		background: #f9f5f6;
+		border-radius: 10px;
+		box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+	}
 
-.projects h3 {
-	font-size: clamp(18px, 2.5vw, 24px);
-	color: #e46883;
-	margin: 0 0 10px;
-	text-transform: uppercase;
-	font-weight: 600;
-	border-bottom: 2px solid #e46883;
-	display: inline-block;
-	padding-bottom: 5px;
-}
+	.projects h3 {
+		font-size: clamp(18px, 2.5vw, 24px);
+		color: #e46883;
+		margin: 0 0 10px;
+		text-transform: uppercase;
+		font-weight: 600;
+		border-bottom: 2px solid #e46883;
+		display: inline-block;
+		padding-bottom: 5px;
+	}
 
-.projects p {
-	font-size: 1em;
-	color: #7a4857;
-	margin: 0 0 10px;
-	line-height: 1.6;
-}
+	.projects p {
+		font-size: 1em;
+		color: #7a4857;
+		margin: 0 0 10px;
+		line-height: 1.6;
+	}
 
-.projects .tags {
-	display: flex;
-	gap: 10px;
-	flex-wrap: wrap;
-	margin-top: 10px;
-}
+	.projects .tags {
+		display: flex;
+		gap: 10px;
+		flex-wrap: wrap;
+		margin-top: 10px;
+	}
 
-.projects .tags div {
-	background: #e07e8e;
-	color: #fff;
-	padding: 5px 10px;
-	border-radius: 20px;
-	font-size: 0.9em;
-	text-transform: uppercase;
-	font-weight: 500;
-	transition: background 0.3s ease, transform 0.2s ease;
-	cursor: pointer;
-}
+	.projects .tags div {
+		background: #e07e8e;
+		color: #fff;
+		padding: 5px 10px;
+		border-radius: 20px;
+		font-size: 0.9em;
+		text-transform: uppercase;
+		font-weight: 500;
+		transition: background 0.3s ease, transform 0.2s ease;
+		cursor: pointer;
+	}
 
-.projects .tags div:hover {
-	background: #df707e;
-	transform: scale(1.1);
-}
+	.projects .tags div:hover {
+		background: #df707e;
+		transform: scale(1.1);
+	}
 
-.projects .langs {
-	margin-top: 15px;
-}
+	.projects .langs {
+		margin-top: 15px;
+	}
 
-.projects .langs ul {
-	list-style: none;
-	padding: 0;
-	margin: 0;
-	display: flex;
-	gap: 10px;
-}
+	.projects .langs ul {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+		display: flex;
+		align-items: center;
+		gap: 10px;
+	}
 
-.projects .langs li {
-	background: #f3e5e9;
-	color: #7a4857;
-	padding: 5px 15px;
-	border-radius: 10px;
-	font-size: 0.9em;
-	font-weight: 500;
-	text-transform: capitalize;
-	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-	transition: background 0.3s ease, box-shadow 0.3s ease;
-}
+	.projects .langs li {
+		background: #f3e5e9;
+		color: #7a4857;
+		padding: 3px 13px;
+		border-radius: 10px;
+		font-size: 0.7em;
+		font-weight: 500;
+		text-transform: capitalize;
+		box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+		transition: background 0.3s ease, box-shadow 0.3s ease;
+	}
 
-.projects .langs li:hover {
-	background: #e9d4db;
-	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
+	.projects .langs li:hover {
+		background: #e9d4db;
+		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+	}
 
-.projects .langs .sep {
-	color: #7a4857;
-	font-weight: bold;
-	font-size: 1.2em;
-	margin: 0 5px;
-}
+	.projects .langs .sep {
+		color: #7a4857;
+		font-weight: bold;
+		font-size: 1.2em;
+		margin: 0 5px;
+	}
 
-.projects .langs .votes {
-	background: #e07e8e;
-	color: #ffffff;
-	padding: 6px 15px;
-	border-radius: 20px;
-	font-size: 1em;
-	font-weight: 700;
-	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-	transition: transform 0.3s ease, box-shadow 0.3s ease;
-    display: flex;
-    gap: 8px;
-    align-items: center;
-}
+	.projects .langs .votes {
+		background: #e07e8e;
+		color: #ffffff;
+		padding: 3px 13px;
+		border-radius: 20px;
+		font-size: .7em;
+		font-weight: 700;
+		box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+		transition: transform 0.3s ease, box-shadow 0.3s ease;
+		display: flex;
+		gap: 8px;
+		align-items: center;
+	}
 
-.projects .langs .votes:hover {
-	transform: scale(1.1);
-	box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
-}
+	.projects .langs .votes:hover {
+		transform: scale(1.1);
+		box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+	}
 
 </style>
 <div class="projects">
-    <% let projects = [{
-        title: "Projeto 1",
-        description: "lasdaçkskdaçsldkaçlsdkasçsld",
-        tags: ["Js", "projeto", "kau lindu"],
-        langs: ["Js", "Html", "Css"],
-        votes: 3
-    }] %>
+	<% let projects = [{
+		title: "Projeto 1",
+		description: "lasdaçkskdaçsldkaçlsdkasçsld",
+		tags: ["Js", "projeto", "kau lindu"],
+		langs: ["Js", "Html", "Css"],
+		votes: 3,
+		owner: {
+			username: "Kauzx00",
+			avatar: "https://cdn.discordapp.com/avatars/1142936214744354896/f0066b00e8cce077a92f663a577fe529.png?size=2048"
+		}
+	}] %>
 
-    <% projects.forEach(a => { %>
-        <h3><%= a.title %></h3>
-        <div>
-            <p><%= a.description %></p>
-        </div>
-        <div class="tags">
-            <% a.tags.forEach(tag => { %>
-                <div><%= tag %></div>
-            <% }) %>
-        </div>
-        <div class="langs">
-            <ul>
-                <% a.langs.forEach(lang => { %>
-                    <li><%= lang %></li>
-                <% }) %>
-                <span class="sep">·</span>
-                <div class="votes"><span><i class="fas fa-thumbs-up"></i></span> <%= a.votes %></div>
-            </ul>
-        </div>
-    <% }) %>
+	<% projects.forEach(a => {
+		%>
+		<h3><%= a.title %></h3>
+		<div>
+			<p>
+				<%= a.description %>
+			</p>
+		</div>
+		<div class="tags">
+			<% a.tags.forEach(tag => {
+				%>
+				<div>
+					<%= tag %>
+				</div>
+				<%
+			}) %>
+		</div>
+		<div class="langs">
+			<ul>
+				<% a.langs.forEach(lang => {
+					%>
+					<li><%= lang %></li>
+					<%
+				}) %>
+				<span class="sep">·</span>
+				<div class="votes">
+					<span><i class="fas fa-thumbs-up"></i></span> <%= a.votes %>
+				</div>
+			</ul>
+		</div>
+		<%
+	}) %>
 </div>

@@ -78,7 +78,7 @@ body {
 
 .sla3 {
     width: 40px;
-    position: absolute;
+    position: fixed;
     bottom: 8%;
     right: auto;
     left: 25px;
